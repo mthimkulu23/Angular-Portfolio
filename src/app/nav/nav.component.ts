@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 home ='Home '
+navbarpro =[
+  'PORTFOLIO','Home', 'About', 'Projects', 'Dropdown' , 'Resume'
+]
+
 
 }
