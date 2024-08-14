@@ -10,17 +10,20 @@ body{
 }
 
 
-.nav-item{
+.nav-item {
     margin-left: 200px;
     display: flex;
     justify-content: flex-end;
-    
-}
-
-.nav-item:hover{
-    background-color: white;
+    background-color: transparent;
     border-radius: 20px;
-    
-}
+    opacity: 0.9;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: #F3FEB8;
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
 
 
