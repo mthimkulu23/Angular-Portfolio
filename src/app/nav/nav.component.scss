@@ -3,16 +3,17 @@
     background-color: #77E4C8;
     opacity: .7;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    
 }
 
 
 .nav-item {
-    margin-left: 200px;
+    margin-left: 150px;
     display: flex;
     justify-content: space-around;
     justify-content: flex-end;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 39px;
     opacity: 0.9;
     transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
   }
@@ -24,3 +25,24 @@
   }
 
 
+  .image1{
+    width: 55px;
+    height: 55px;
+    border-radius: 60%;
+
+
+  }
+
+
+  .btn-group{
+    margin-left: -5px;
+  }
+
+ 
+
+
+.name{
+margin-left: 15px;
+font-weight: bold;
+font-size: 15px;
+}
