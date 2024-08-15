@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })
-export class NavComponent {
+export class NavComponent{
 home ='Home '
 navbarpro =[
   'THABANG MTHIMKULU','Home', 'About', 'Projects', 'Contact' , 'Download CV', 

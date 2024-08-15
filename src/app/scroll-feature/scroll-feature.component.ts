@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './scroll-feature.component.html',
   styleUrl: './scroll-feature.component.scss'
 })
-export class ScrollFeatureComponent {
+export class ScrollFeatureComponent  {
 
 }
