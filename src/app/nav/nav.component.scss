@@ -1,9 +1,13 @@
 
-.navbar{
-    background-color: #77E4C8;
-    opacity: .7;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
-    
+.navbar {
+  background-color: #77E4C8;
+  opacity: 0.8;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: fixed;         /* Keep the navbar fixed at the top */
+  top: 0;                 /* Aligns it to the top of the viewport */
+  width: 100%;            /* Full width */
+  z-index: 1000;         /* Ensure it appears above other content */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for better visibility */
 }
 
 
