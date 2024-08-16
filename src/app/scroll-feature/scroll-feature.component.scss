@@ -4,23 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 50px;
-    padding-top: 110px;
-
-}
-
-
-.section{
-    text-align: center;
-    font-size: 16px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.home{
-    height: 660px;
-    background-color: #36C2CE;
-    
+   
 }
 
 .btn {
@@ -33,3 +17,32 @@
     padding: 10px 20px; /* Optional: adjust padding */
     border-radius: 5px; /* Optional: rounded corners */
 }
+
+.pictureoffice {
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    display: block;
+    margin-top: 100px;
+    border: 3px solid grey;
+    margin: 0 auto; /* Centers the picture horizontally */
+}
+
+
+
+
+.section{
+    text-align: center;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home{
+  
+    background-color: #36C2CE;
+    height: fit-content;
+    padding-top: 90px;  
+}
+
