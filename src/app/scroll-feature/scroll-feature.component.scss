@@ -35,6 +35,11 @@
 
 }
 
+.card-text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
 .pictureoffice {
     width: 300px;
     height: 300px;
@@ -83,4 +88,93 @@
     text-align: center; /* Centers button text */
     gap: 10px; /* Space between buttons */
 
+}
+
+
+
+.social {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 35px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    border-radius: 100%;
+    border: 1 solid grey 20px;
+}
+
+.social a:hover {
+    color: #333; /* Maintain GitHub color on hover */
+}
+
+.card-group-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+    gap: 160px; /* Space between cards */
+    transition: box-shadow 0.3s ease-in; /* Transition effect for the group */
+}
+
+.card-main {
+    transition: box-shadow 0.3s ease-in; /* Transition effect for each card */
+    text-align: center;
+    flex: 1 1 280px; /* Makes cards flexible with a base width */
+    max-width: 300px; /* Limits maximum width of cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
+}
+
+.card-main:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow effect on hover */
+}
+
+/* Apply a class to manage the box-shadow dynamically */
+.card-main.active {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow effect when active */
+}
+
+/* Ensures image adapts to card */
+.card-img-main {
+    width: 100%; /* Make images full width within the card */
+    margin: 0 auto; 
+    display: block;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .card-group-main {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    .card-main {
+        width: 90%; /* Allows cards to take up more space on mobile */
+        max-width: none; /* Remove max-width restriction */
+    }
+}
+
+
+.card-body .btn {
+    margin: 5px; /* Space around buttons */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+/* Ensure adequate spacing for small screens */
+@media (max-width: 600px) {
+    .row {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons */
+    }
+
+    .card-body .btn {
+        width: 90%; /* Make buttons take up more space on smaller screens */
+        margin: 5px 0; /* Vertical spacing */
+    }
 }
