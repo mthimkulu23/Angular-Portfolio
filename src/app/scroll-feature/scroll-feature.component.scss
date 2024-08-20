@@ -24,7 +24,9 @@
 }
 
 .projects{
-    background-color: aquamarine;
+    background-color: #EEEEEE;
+    padding-top: 120px; 
+
 }
 
 .get_to_know{
@@ -213,9 +215,8 @@ input[type=text], select, textarea {
 
   .Contact {
     background-color: #36C2CE; /* Background color */
-    padding-top: 120px; /* Top padding */
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
+    margin-top: 0px;
+    padding-top: 50px;
+    
    
   }
