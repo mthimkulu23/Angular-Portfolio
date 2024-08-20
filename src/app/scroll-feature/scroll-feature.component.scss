@@ -11,8 +11,7 @@
 
 .who_l_am{
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  
+    font-family: 'Arial', sans-serif;   
 
 }
 
@@ -24,26 +23,27 @@
 }
 
 .projects{
-    background-color: #EEEEEE;
-    padding-top: 120px; 
+    padding-top: 90px; 
+   
+
+
 
 }
 
 .get_to_know{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif; 
     font-weight: bold;
 }
 
 .individual{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif; 
     font-weight: bold;
 
 }
 
 .card-text{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    font-family: 'Arial', sans-serif; 
 }
 
 .pictureoffice {
@@ -61,13 +61,14 @@
     font-size: 16px;
     padding-left: 30px;
     padding-right: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Arial', sans-serif; 
     padding-top: 20px;
 }
 
 .home {
     background-color: #36C2CE;
-    padding-top: 120px; 
+    padding-top: 120px;
+    position: sticky;
    
 }
 
@@ -133,7 +134,8 @@
 }
 
 .card-main:hover {
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow effect on hover */
+    box-shadow: 0 8px 30px #3eceaa; /* Shadow effect on hover */
+    
 }
 
 /* Apply a class to manage the box-shadow dynamically */
@@ -172,51 +174,162 @@
     justify-content: center; /* Center buttons horizontally */
 }
 
-/* Ensure adequate spacing for small screens */
+
+
+  .education {
+    font-family: Arial, sans-serif;
+    margin: 10px auto; /* Center the section */
+    text-align: center; /* Center text for the entire section */
+    max-width: 600px; /* Limit the width for larger screens */
+}
+
+.individual {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.education-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    width: 90%; /* Full width minus margin on mobile */
+    max-width: 500px; /* Limit the width on larger screens */
+}
+
+
+
+.education-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.education-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.institution {
+    font-weight: bold;
+    color: #555;
+}
+
+.date {
+    color: #999;
+    margin-left: 10px;
+}
+
+.details {
+    margin-top: 10px;
+    color: #444;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
 @media (max-width: 600px) {
-    .row {
-        flex-direction: column; /* Stack buttons vertically on small screens */
-        align-items: center; /* Center buttons */
+    .individual {
+        font-size: 20px; /* Slightly smaller font size for mobile */
     }
 
-    .card-body .btn {
-        width: 90%; /* Make buttons take up more space on smaller screens */
-        margin: 5px 0; /* Vertical spacing */
+    .education-item {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .date {
+        display: block; /* Stack date below institution */
+        margin-top: 5px; /* Add some margin */
     }
 }
 
 
 
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
- 
-
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
+.resume {
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    margin-top: 30px;
-
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .individual {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+ 
+  }
+  
+  .resume-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if necessary */
+    gap: 30px; /* Space between items */
+  }
+  
+  .resume-item {
+    flex: 1; /* Make items flexible */
+    min-width: 250px; /* Minimum width for the items */
+    padding: 15px;
+    border-left: 4px solid #007bff;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation properties */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resume-item:hover {
+    transform: translateY(-5px); /* Raise item on hover */
+    box-shadow: 0 4px 20px #3eceaa; /* Increase shadow on hover */
+  }
+  
+  .resume-item h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .resume-item h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .resume-item p {
+    line-height: 1.5;
+  }
+  
+  .resume-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .resume-item ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume {
+      padding: 15px;
+    }
+    .individual {
+      font-size: 24px;
+    }
+    .resume-item h5 {
+      font-size: 20px;
+    }
   }
 
 
-  .Contact {
-    background-color: #36C2CE; /* Background color */
-    margin-top: 0px;
-    padding-top: 50px;
-    
-   
-  }
