@@ -1,4 +1,19 @@
 
+.video {
+    height: 100vh;
+}
+
+.video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
 .header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +84,7 @@
     background-color: #36C2CE;
     padding-top: 120px;
     position: sticky;
+    padding-bottom: 14px;
    
 }
 
@@ -258,7 +274,6 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
