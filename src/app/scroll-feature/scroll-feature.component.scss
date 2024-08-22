@@ -14,6 +14,16 @@
 }
 
 
+.btn-custom {
+    background-color: #D6BD98;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 .header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,8 +41,9 @@
 }
 
 .About {
-    background-color: #EEEEEE;
+  
     padding: 40px 20px; /* Added padding for spacing */
+    padding-top: 100px;
     margin-top: -15.8px;
 
 }
@@ -67,7 +78,7 @@
     border-radius: 60%;
     display: block;
     margin-top: 100px;
-    border: 3px solid grey;
+    border: 10px solid #D6BD98;
     margin: 0 auto; /* Centers the picture horizontally */
 }
 
@@ -81,7 +92,6 @@
 }
 
 .home {
-    background-color: #36C2CE;
     padding-top: 120px;
     position: sticky;
     padding-bottom: 15px;
@@ -91,8 +101,8 @@
 
 .card {
     border: none;
-    background-color: #EEEEEE;
     padding-top: 50px; 
+    background-color: transparent;
 
    
 }
@@ -114,7 +124,6 @@
 }
 
 
-
 .social {
     display: flex; /* Flexbox for social icons */
     justify-content: center; /* Center icons */
@@ -125,12 +134,24 @@
     text-decoration: none; /* Remove underline from links */
     font-size: 35px; /* Icon size */
     transition: color 0.3s ease; /* Smooth color transition */
-    border-radius: 100%;
-    border: 1 solid grey 20px;
+    border-radius: 50%; /* Circular border */
+    padding: 5px; /* Padding for click area */
+}
+
+.social a.github {
+    color: black; /* GitHub color */
+}
+
+.social a.linkedin {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.social a.discord {
+    color: #7289DA; /* Discord color */
 }
 
 .social a:hover {
-    color: #333; /* Maintain GitHub color on hover */
+    opacity: 0.8; /* Hover effect for all icons */
 }
 
 .card-group-main {
@@ -144,13 +165,13 @@
 .card-main {
     transition: box-shadow 0.3s ease-in; /* Transition effect for each card */
     text-align: center;
-    flex: 1 1 280px; /* Makes cards flexible with a base width */
+    flex: 1 1 100px; /* Makes cards flexible with a base width */
     max-width: 300px; /* Limits maximum width of cards */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
 }
 
 .card-main:hover {
-    box-shadow: 0 8px 30px #3eceaa; /* Shadow effect on hover */
+    box-shadow: 0 8px 90px #D6BD98; /* Shadow effect on hover */
     
 }
 
@@ -162,7 +183,6 @@
 /* Ensures image adapts to card */
 .card-img-main {
     width: 100%; /* Make images full width within the card */
-    margin: 0 auto; 
     display: block;
 }
 
@@ -202,11 +222,11 @@
 .individual {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+   
 }
 
 .education-item {
-    background-color: #f9f9f9;
+    
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -296,8 +316,7 @@
     flex: 1; /* Make items flexible */
     min-width: 250px; /* Minimum width for the items */
     padding: 15px;
-    border-left: 4px solid #007bff;
-    background-color: #f9f9f9;
+  
     border-radius: 4px;
     transition: transform 0.3s, box-shadow 0.3s; /* Animation properties */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -305,7 +324,7 @@
   
   .resume-item:hover {
     transform: translateY(-5px); /* Raise item on hover */
-    box-shadow: 0 4px 20px #3eceaa; /* Increase shadow on hover */
+    box-shadow: 0 4px 20px #D6BD98; /* Increase shadow on hover */
   }
   
   .resume-item h5 {
