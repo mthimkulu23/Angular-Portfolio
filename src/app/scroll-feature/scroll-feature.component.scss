@@ -30,6 +30,23 @@
     font-weight: bold;
     font-size: 50px;
     padding-top: 30px;
+    opacity: 0; /* Start as invisible */
+    animation: fadeInOut 4s infinite; /* Animation duration and infinite looping */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    25% {
+        opacity: 1; /* Fully visible */
+    }
+    75% {
+        opacity: 1; /* Still visible */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+    }
 }
 
 
