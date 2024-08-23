@@ -21,6 +21,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -50,6 +51,17 @@
 }
 
 
+.line_paragraph {
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
 
 .who_l_am{
     text-align: center;
@@ -66,7 +78,7 @@
 }
 
 .projects{
-    padding-top: 90px; 
+    padding-top: 30px; 
    
 
 
@@ -380,6 +392,94 @@
     }
     .resume-item h5 {
       font-size: 20px;
+    }
+  }
+
+
+
+
+/* Contact section styles */
+.contact-section {
+    padding: 80px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 50px;
+  }
+  
+  .contact-info h2 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    color: #D6BD98;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact-item:hover i {
+    color: #c4a67b;
+  }
+  
+  .contact-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 60px 20px;
+    }
+  
+    .contact-info h2 {
+      font-size: 28px;
+    }
+  
+    .contact-item i {
+      font-size: 20px;
+    }
+  
+    .contact-item h3 {
+      font-size: 16px;
+    }
+  
+    .contact-item p {
+      font-size: 14px;
     }
   }
 
