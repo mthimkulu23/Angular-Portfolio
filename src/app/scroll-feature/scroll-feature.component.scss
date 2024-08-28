@@ -1,15 +1,486 @@
 
-.header{
+.video {
+    height: 100vh;
+}
+
+.video video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
+.btn-custom {
+    background-color: #D6BD98;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 50px;
-    margin-top: 50px;
+    padding-top: 30px;
+    opacity: 0; /* Start as invisible */
+    animation: fadeInOut 4s infinite; /* Animation duration and infinite looping */
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    25% {
+        opacity: 1; /* Fully visible */
+    }
+    75% {
+        opacity: 1; /* Still visible */
+    }
+    100% {
+        opacity: 0; /* Fade out */
+    }
 }
 
 
-.section{
+.line_paragraph {
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+  }
+
+
+
+.who_l_am{
+    text-align: center;
+    font-family: 'Arial', sans-serif;   
+
+}
+
+.About {
+  
+    padding: 40px 20px; /* Added padding for spacing */
+    padding-top: 100px;
+    margin-top: -15.8px;
+
+}
+
+.projects{
+    padding-top: 30px; 
+   
+
+
+
+}
+
+.get_to_know{
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+}
+
+.individual{
+    text-align: center;
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+
+}
+
+.card-text{
+    font-family: 'Arial', sans-serif; 
+}
+
+.pictureoffice {
+    width: 300px;
+    height: 300px;
+    border-radius: 60%;
+    display: block;
+    margin-top: 100px;
+    border: 10px solid #D6BD98;
+    margin: 0 auto; /* Centers the picture horizontally */
+}
+
+.section {
     text-align: center;
     font-size: 16px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Arial', sans-serif; 
+    padding-top: 20px;
 }
+
+.home {
+    padding-top: 120px;
+    position: sticky;
+    padding-bottom: 15px;
+   
+}
+
+
+.card {
+    border: none;
+    padding-top: 50px; 
+    background-color: transparent;
+
+   
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+    justify-content: space-between; /* Evenly distributes space between buttons */
+    gap: 10px; /* Space between buttons */
+}
+
+.btn {
+    flex: 1; /* Makes buttons grow equally */
+    min-width: 120px; /* Sets a minimum width for buttons */
+    padding: 10px;
+    text-align: center; /* Centers button text */
+    gap: 10px; /* Space between buttons */
+
+}
+
+
+.social {
+    display: flex; /* Flexbox for social icons */
+    justify-content: center; /* Center icons */
+    gap: 15px; /* Space between icons */
+}
+
+.social a {
+    text-decoration: none; /* Remove underline from links */
+    font-size: 35px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+    border-radius: 50%; /* Circular border */
+    padding: 5px; /* Padding for click area */
+}
+
+.social a.github {
+    color: black; /* GitHub color */
+}
+
+.social a.linkedin {
+    color: #0077B5; /* LinkedIn blue */
+}
+
+.social a.discord {
+    color: #7289DA; /* Discord color */
+}
+
+.social a:hover {
+    opacity: 0.8; /* Hover effect for all icons */
+}
+
+.card-group-main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line */
+    gap: 160px; /* Space between cards */
+    transition: box-shadow 0.3s ease-in; /* Transition effect for the group */
+}
+
+.card-main {
+    transition: box-shadow 0.3s ease-in; /* Transition effect for each card */
+    text-align: center;
+    flex: 1 1 100px; /* Makes cards flexible with a base width */
+    max-width: 300px; /* Limits maximum width of cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Initial shadow effect */
+}
+
+.card-main:hover {
+    box-shadow: 0 8px 90px #D6BD98; /* Shadow effect on hover */
+    
+}
+
+/* Apply a class to manage the box-shadow dynamically */
+.card-main.active {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Shadow effect when active */
+}
+
+/* Ensures image adapts to card */
+.card-img-main {
+    width: 100%; /* Make images full width within the card */
+    display: block;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    .card-group-main {
+        flex-direction: column; /* Stack cards vertically */
+        align-items: center; /* Center cards horizontally */
+    }
+
+    .card-main {
+        width: 90%; /* Allows cards to take up more space on mobile */
+        max-width: none; /* Remove max-width restriction */
+    }
+}
+
+
+.card-body .btn {
+    margin: 5px; /* Space around buttons */
+}
+
+.row {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+    justify-content: center; /* Center buttons horizontally */
+}
+
+
+
+  .education {
+    font-family: Arial, sans-serif;
+    margin: 10px auto; /* Center the section */
+    text-align: center; /* Center text for the entire section */
+    max-width: 600px; /* Limit the width for larger screens */
+}
+
+.individual {
+    font-size: 24px;
+    margin-bottom: 15px;
+   
+}
+
+.education-item {
+    
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+    width: 90%; /* Full width minus margin on mobile */
+    max-width: 500px; /* Limit the width on larger screens */
+}
+
+
+
+.education-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.education-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.institution {
+    font-weight: bold;
+    color: #555;
+}
+
+.date {
+    color: #999;
+    margin-left: 10px;
+}
+
+.details {
+    margin-top: 10px;
+    color: #444;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .individual {
+        font-size: 20px; /* Slightly smaller font size for mobile */
+    }
+
+    .education-item {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .date {
+        display: block; /* Stack date below institution */
+        margin-top: 5px; /* Add some margin */
+    }
+}
+
+
+
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+  }
+  
+  .individual {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+ 
+  }
+  
+  .resume-items {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap if necessary */
+    gap: 30px; /* Space between items */
+  }
+  
+  .resume-item {
+    flex: 1; /* Make items flexible */
+    min-width: 250px; /* Minimum width for the items */
+    padding: 15px;
+  
+    border-radius: 4px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation properties */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resume-item:hover {
+    transform: translateY(-5px); /* Raise item on hover */
+    box-shadow: 0 4px 20px #D6BD98; /* Increase shadow on hover */
+  }
+  
+  .resume-item h5 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .resume-item h6 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .resume-item p {
+    line-height: 1.5;
+  }
+  
+  .resume-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .resume-item ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume {
+      padding: 15px;
+    }
+    .individual {
+      font-size: 24px;
+    }
+    .resume-item h5 {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+/* Contact section styles */
+.contact-section {
+    padding: 80px 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    gap: 50px;
+  }
+  
+  .contact-info h2 {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    color: #D6BD98;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .contact-item:hover i {
+    color: #c4a67b;
+  }
+  
+  .contact-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .contact-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 60px 20px;
+    }
+  
+    .contact-info h2 {
+      font-size: 28px;
+    }
+  
+    .contact-item i {
+      font-size: 20px;
+    }
+  
+    .contact-item h3 {
+      font-size: 16px;
+    }
+  
+    .contact-item p {
+      font-size: 14px;
+    }
+  }
+
+
